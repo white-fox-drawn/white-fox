@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-BR">
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Mascotes, estudos de personagem e aplicações em materiais e comunicação digital por Daniela Carvalho."
+        />
+        <meta name="theme-color" content="#0d090b" />
+        <title>Criação de mascotes | Daniela Carvalho — White Fox</title>
+        <meta property="og:title" content="Criação de mascotes | Daniela Carvalho" />
+        <meta
+            property="og:description"
+            content="Mascotes, estudos de personagem e aplicações em materiais e comunicação digital por Daniela Carvalho."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../assets/img/obra-40.webp" />
+        <meta property="og:locale" content="pt_BR" />
+        <link rel="icon" href="../assets/icons/fox.png" type="image/png" />
+        <link
+            rel="preload"
+            href="../assets/fonts/display.woff"
+            as="font"
+            type="font/woff"
+            crossorigin
+        />
+        <link rel="stylesheet" href="../style.css?v=project-menu-1" />
+        <script src="../script.js?v=project-menu-1" defer></script>
+        <noscript
+            ><style>
+                .header {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                }
+                @media (max-width: 520px) {
+                    .menu-toggle {
+                        display: none;
+                    }
+                    .nav {
+                        display: flex;
+                        position: static;
+                        flex-direction: row;
+                        gap: 12px;
+                        background: transparent !important;
+                        border: 0;
+                        padding: 0;
+                    }
+                    .nav a {
+                        font-size: 12px;
+                        width: auto;
+                    }
+                    .social {
+                        display: none;
+                    }
+                }
+            </style></noscript
+        >
+    </head>
+    <body class="inner-page" id="top">
+        <a href="#main" class="skip-link">Pular para o conteúdo</a>
+        <!-- MENU PRINCIPAL -->
+        <header class="header visible">
+            <a class="logo" href="../index.html#home" aria-label="White Fox — início"
+                ><img src="../assets/icons/fox.png" width="42" height="45" alt="White Fox"
+            /></a>
+            <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+            <nav class="nav" id="main-nav" aria-label="Navegação principal">
+                <a href="../index.html#home">Home</a><a href="../index.html#sobre">Sobre mim</a>
+                <div class="nav-projects">
+                    <div class="nav-projects-main">
+                        <a href="../index.html#projetos" aria-current="true"
+                            >Projetos</a
+                        ><button
+                            class="projects-toggle"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="projects-submenu"
+                            aria-label="Páginas de projetos"
+                        >
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="projects-submenu" id="projects-submenu" hidden>
+                        <a href="../pages/projeto1.html">Ilustração</a
+                        ><a href="../pages/projeto2.html">Design</a
+                        ><a href="../pages/projeto3.html">Fotografia</a
+                        ><a href="../pages/projeto4.html" aria-current="page">Mascotes</a>
+                    </div>
+                </div>
+                <a href="../index.html#contato">Contato</a>
+            </nav>
+            <div class="social">
+                <a
+                    href="https://www.linkedin.com/in/daniela-carvalho-a021b6196/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn de Daniela Carvalho (nova aba)"
+                    ><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.74H4.98V9.2h2.95v9.54ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM19 18.74h-2.95V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.76V9.2h2.83v1.3h.04c.39-.74 1.36-1.53 2.8-1.53 2.99 0 3.55 1.97 3.55 4.53v5.24Z"
+                        /></svg></a
+                ><a
+                    href="https://www.instagram.com/white_foxd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram White Fox (nova aba)"
+                    ><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="5"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+                        <circle cx="17.5" cy="6.8" r="1.1" /></svg
+                ></a>
+            </div>
+        </header>
+
+        <!-- CONTEÚDO DA PÁGINA -->
+        <main id="main">
+            <div class="page-shell">
+                <div class="page-top">
+                    <a class="back-link" href="../index.html#projetos">Todos os projetos</a>
+                    <nav class="category-nav" aria-label="Nesta página">
+                        <a href="#criacao">Criação</a><a href="#personagens">Personagens</a
+                        ><a href="#aplicacoes">Aplicações</a>
+                    </nav>
+                </div>
+                <section class="feature" id="criacao">
+                    <div class="feature-copy">
+                        <p class="eyebrow">Personalidade em cada traço</p>
+                        <h1 class="display">Mascotes</h1>
+                        <p>
+                            Da primeira ideia à exposição: personagens com expressão, presença e
+                            uma linguagem própria.
+                        </p>
+                        <a class="text-link" href="#personagens">Ver personagens</a>
+                    </div>
+                    <div>
+                        <a
+                            class="feature-art image-link"
+                            href="../assets/thumbs/obra-40.png"
+                            data-gallery="mascot-feature"
+                            data-title="Raposa — aplicação em bandeira"
+                            ><img
+                                src="../assets/thumbs/obra-40.png"
+                                alt="Raposa aplicada em bandeira"
+                                width="917"
+                                height="1122"
+                                loading="eager"
+                                decoding="async"
+                        /></a>
+                        <p class="feature-caption">
+                            <span>Criação de personagem</span><span>Ilustração e aplicação em evento de formatura.</span>
+                        </p>
+                    </div>
+                </section>
+                <section class="work-section" id="personagens">
+                    <div class="section-header">
+                        <h2 class="display">Do esboço à cor</h2>
+                        <p>Trabalhos onde desenvolvi mascotes para formaturas e eventos ao redor de Minas Gerais.</p>
+
+                    </div>
+                    <div class="art-grid sheets">
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-34.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Coruja — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-34.webp"
+                                    alt="Coruja — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Tubarão — desenvolvimento</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-43.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Tartaruga — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-43.webp"
+                                    alt="Tartaruga — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Sapo — desenvolvimento</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-44.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Rinoceronte — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-44.webp"
+                                    alt="Rinoceronte — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Escorpião — desenvolvimento</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-45.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Leão — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-45.webp"
+                                    alt="Leão — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Porco-Espinho — desenvolvimento</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-46.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Fênix — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-46.webp"
+                                    alt="Fênix — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Fênix — desenvolvimento</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-47.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Personagem — versões de cor"
+                                ><img
+                                    src="../assets/img/obra-47.webp"
+                                    alt="Personagem — versões de cor"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Têmis — versões de cor</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-48.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Personagem — exploração de figurino"
+                                ><img
+                                    src="../assets/img/obra-48.webp"
+                                    alt="Personagem — exploração de figurino"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Athena — exploração de figurino</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-49.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Personagens — traço e cor"
+                                ><img
+                                    src="../assets/img/obra-49.webp"
+                                    alt="Personagens — traço e cor"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Rinoceronte e Múmia — traço e cor</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-50.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Mascotes — estudos de personagem"
+                                ><img
+                                    src="../assets/img/obra-50.webp"
+                                    alt="Mascotes — estudos de personagem"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Mascotes — estudos de personagem</figcaption>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-51.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Touro — desenvolvimento"
+                                ><img
+                                    src="../assets/img/obra-51.webp"
+                                    alt="Touro — desenvolvimento"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                            <figcaption>Touro — desenvolvimento</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="work-section" id="aplicacoes">
+                    <div class="section-header">
+                        <h2 class="display">Fora do papel</h2>
+                        <p>
+                            Registros das identidades em materiais, espaços e comunicação digital.
+                        </p>
+                    </div>
+                    <div class="art-grid three">
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-39.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Personagem — aplicações"
+                                ><img
+                                    src="../assets/img/obra-39.webp"
+                                    alt="Personagem — aplicações"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-42.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Polvo — composição gráfica"
+                                ><img
+                                    src="../assets/img/obra-42.webp"
+                                    alt="Polvo — composição gráfica"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-41.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Raposa — personagem e bandeira"
+                                ><img
+                                    src="../assets/img/obra-41.webp"
+                                    alt="Raposa — personagem e bandeira"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/img/obra-38.webp"
+                                data-gallery="mascot-sheets"
+                                data-title="Medicina — mascote e assinatura"
+                                ><img
+                                    src="../assets/img/obra-38.webp"
+                                    alt="Medicina — mascote e assinatura"
+                                    width="1920"
+                                    height="1080"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/thumbs/obra-35.png"
+                                data-gallery="mascot-apps"
+                                data-title="Identidade no espaço do evento"
+                                ><img
+                                    src="../assets/thumbs/obra-35.png"
+                                    alt="Identidade no espaço do evento"
+                                    width="1009"
+                                    height="760"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/thumbs/obra-36.png"
+                                data-gallery="mascot-apps"
+                                data-title="Aplicação em materiais"
+                                ><img
+                                    src="../assets/thumbs/obra-36.png"
+                                    alt="Aplicação em materiais"
+                                    width="438"
+                                    height="458"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                        <figure class="art-card">
+                            <a
+                                class="image-link"
+                                href="../assets/thumbs/obra-37.png"
+                                data-gallery="mascot-apps"
+                                data-title="Identidade em evento"
+                                ><img
+                                    src="../assets/thumbs/obra-37.png"
+                                    alt="Identidade em evento"
+                                    width="402"
+                                    height="469"
+                                    loading="lazy"
+                                    decoding="async"
+                            /></a>
+                        </figure>
+                    </div>
+                </section>
+                <div class="next-project">
+                    <p class="eyebrow">Continue explorando</p>
+                    <a href="projeto3.html">Explore os ensaios fotográficos.</a>
+                </div>
+            </div>
+            <!-- CONTATO -->
+            <section class="contato" id="contato" aria-labelledby="contact-heading">
+                <div class="contato-content">
+                    <div>
+                        <p class="eyebrow">Contato</p>
+                        <h2 id="contact-heading">
+                            Vamos criar<br />
+                            algo juntos?
+                        </h2>
+                    </div>
+                    <div class="contact-details">
+                        <p>
+                            Tem um projeto em mente? Vamos conversar sobre ideias, histórias e
+                            possibilidades.
+                        </p>
+                        <a class="contact-email" href="mailto:danielavieirac00@gmail.com"
+                            >danielavieirac00@gmail.com</a
+                        >
+                        <div class="contato-social">
+                            <a
+                                href="https://www.linkedin.com/in/daniela-carvalho-a021b6196/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >LinkedIn</a
+                            ><a
+                                href="https://www.instagram.com/white_foxd/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Instagram</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- RODAPÉ -->
+        <footer class="footer">
+            <div class="footer-content">
+                <a class="footer-brand" href="../index.html#home"
+                    ><img src="../assets/icons/fox.png" alt="" width="28" height="32" /><span
+                        >WHITE FOX</span
+                    ></a
+                >
+                <p class="footer-copy">© 2026 Daniela Carvalho. Todos os direitos reservados.</p>
+                <a class="back-top" href="#top">Voltar ao topo</a>
+            </div>
+        </footer>
+        <!-- VISUALIZADOR DE IMAGENS E VÍDEOS -->
+        <dialog class="viewer" id="media-viewer" aria-labelledby="viewer-title">
+            <div class="viewer-bar">
+                <h2 class="viewer-title" id="viewer-title"></h2>
+                <button class="viewer-close" aria-label="Fechar visualizador" autofocus>×</button>
+            </div>
+            <div class="viewer-stage">
+                <p class="viewer-loading" role="status" hidden>Preparando o vídeo…</p>
+                <div class="viewer-error" role="alert" hidden>
+                    <p>Não foi possível carregar o vídeo.</p>
+                    <a class="text-link" target="_blank" rel="noopener">Abrir vídeo</a
+                    ><button class="text-link viewer-retry" type="button">Tentar novamente</button>
+                </div>
+                <img alt="" hidden /><video
+                    controls
+                    playsinline
+                    preload="auto"
+                    hidden
+                    aria-label="Reprodução da animação"
+                ></video>
+            </div>
+            <div class="viewer-bottom">
+                <button class="viewer-prev">Anterior</button
+                ><span class="viewer-count" aria-live="polite"></span
+                ><button class="viewer-next">Próximo</button>
+            </div>
+        </dialog>
+    </body>
+</html>
