@@ -1617,14 +1617,79 @@ body.viewer-open {
     object-fit: cover;
 }
 
-/* Mesmo tamanho para vídeos, inclusive em galerias mistas */
-.video-grid.carousel-track > .carousel-slide,
-.carousel .carousel-slide.carousel-slide--video {
-    width: min(720px, 85vw);
-}
 
 .carousel .carousel-slide--video .video-thumb {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+}
+.sobre .sobre-art {
+    position: relative;
+    isolation: isolate;
+}
+
+/* Remove o raio antigo desenhado pelo CSS */
+.sobre .sobre-art::after {
+    content: none;
+}
+
+/* Exibe os PNGs com a transparência original */
+.sobre .sobre-art img {
+    position: absolute;
+    display: block;
+    inset: auto;
+    max-width: none;
+    object-fit: contain;
+    filter: none;
+    mask-image: none;
+    -webkit-mask-image: none;
+    clip-path: none;
+}
+
+/* Personagem sobre o arco roxo */
+.sobre .sobre-art .sobre-personagem {
+    bottom: 0;
+    left: 50%;
+    width: auto;
+    height: 84%;
+    max-width: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.sobre .sobre-art .sobre-detalhe {
+    top: 0;
+    right: 4.5%;
+    width: 50%;
+    height: auto;
+    transform: none;
+    z-index: 1;
+}
+.sobre .sobre-art .sobre-personagem {
+    transform: translate(-50%, 20%) scale(1.85);
+    transform-origin: center 75%;
+}
+.sobre .sobre-art .sobre-detalhe {
+    width: 50%;
+    transform: scale(1.7);
+    transform-origin: center;
+}
+/* Vídeos acompanham a altura padrão do carrossel */
+.carousel .carousel-slide:has(.video-card) {
+    width: calc(var(--carousel-height) * 16 / 9);
+}
+
+/* Mantém a capa na proporção correta */
+.carousel .carousel-slide .video-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.carousel .carousel-slide .video-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

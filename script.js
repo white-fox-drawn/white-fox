@@ -516,3 +516,13 @@ document.addEventListener("DOMContentLoaded", () => {
         opener?.focus({ preventScroll: true });
     });
 });
+document.addEventListener("contextmenu", (event) => {
+    if (event.target.closest("img, video, .image-link, .video-card")) {
+        event.preventDefault();
+    }
+});
+document.addEventListener("dragstart", (event) => {
+    if (event.target instanceof HTMLImageElement) {
+        event.preventDefault();
+    }
+});
